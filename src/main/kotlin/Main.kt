@@ -1,6 +1,4 @@
-import classPackage.Color
-import classPackage.Person
-import classPackage.Rectangle
+import classPackage.*
 import java.io.BufferedReader
 import java.lang.IllegalArgumentException
 import java.lang.Integer.max
@@ -114,4 +112,9 @@ fun main(args: Array<String>) {
             reader.close()
         }
     }
+
+    // code block k
+    println("the list of number")
+    val ml = listOf(1, 2, 3, 4, 5)
+    println(ml.joinToString("|", ">", "<").lastChar())
 }
