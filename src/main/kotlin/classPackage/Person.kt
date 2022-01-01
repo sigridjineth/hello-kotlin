@@ -1,3 +1,3 @@
 package classPackage
 
-class Person (val name: String, var isMarried: Boolean) {}
+data class Person (val name: String, var isMarried: Boolean)

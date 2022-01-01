@@ -143,4 +143,11 @@ fun main(args: Array<String>) {
     val source = "Hello, World!"
     val target = "This for you."
     println(source getLongString target)
+
+    // destructuring pattern
+    val sigrid = Person("Sigrid", false)
+    val (newName, isMarried) = sigrid
+    println("newName: $newName, isMarried: $isMarried")
+    val pair: Pair<Person, String> = sigrid to "Hi"
+    println("first: ${pair.first.name}, second: ${pair.second}")
 }
