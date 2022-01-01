@@ -3,7 +3,6 @@ import java.io.BufferedReader
 import java.lang.IllegalArgumentException
 import java.lang.Integer.max
 import java.lang.NumberFormatException
-import java.lang.StringBuilder
 
 fun main(args: Array<String>) {
     // code block a
@@ -117,4 +116,11 @@ fun main(args: Array<String>) {
     println("the list of number")
     val ml = listOf(1, 2, 3, 4, 5)
     println(ml.joinToString("|", ">", "<").lastChar())
+    val m2: String = "Sigrid"
+    println(m2.lastChar)
+    val m3: StringBuilder = StringBuilder("snoop").append("miracle")
+    println(m3.lastChar)
+    var char: Char = 'C'
+    m3.lastChar = char
+    println(m3.lastChar)
 }

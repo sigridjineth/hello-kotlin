@@ -20,3 +20,13 @@ fun <T> Collection<T>.joinToString(
 }
 
 fun String.lastChar(): Char = this[this.length - 1]
+
+// declaring an extension property
+val String.lastChar: Char
+    get() = get(length - 1)
+
+var StringBuilder.lastChar: Char
+    get() = get(length - 1) // property getter
+    set(value: Char) {
+        this.setCharAt(length - 1, value) // property setter
+    }
