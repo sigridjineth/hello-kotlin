@@ -123,4 +123,15 @@ fun main(args: Array<String>) {
     var char: Char = 'C'
     m3.lastChar = char
     println(m3.lastChar)
+
+    // varargs
+    val m4: Array<String> = arrayOf("Sigrid", "Poogle", "Solar", "Ragdoll", "Codesquad")
+    val listIterator = listOf(m4).listIterator()
+    while (listIterator.hasNext()) {
+        val nowList = listIterator.next().iterator()
+        while (nowList.hasNext()) {
+            val element = nowList.next()
+            println(element)
+        }
+    }
 }
