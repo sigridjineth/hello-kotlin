@@ -134,4 +134,13 @@ fun main(args: Array<String>) {
             println(element)
         }
     }
+
+    // infix call
+    // val multi = 3.multiply(10)
+    val multi = 3 multiply 10
+    println("multi: $multi")
+
+    val source = "Hello, World!"
+    val target = "This for you."
+    println(source getLongString target)
 }
